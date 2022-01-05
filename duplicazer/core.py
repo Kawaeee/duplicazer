@@ -1,5 +1,6 @@
-def remove_duplicate():
-    return "remove"
+def remove_duplicate(input_text):
+    return f"{input_text} :: remove"
 
-def find_duplicate():
-    return "find"
+
+def find_duplicate(input_text):
+    return f"{input_text} :: find"

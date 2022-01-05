@@ -1,6 +1,6 @@
 # Duplicazer
 
-- This project is [].
+- Simple web application that allow user to remove or find duplicate string from raw text!!
 
 ## Streamlit Reproduction
 
