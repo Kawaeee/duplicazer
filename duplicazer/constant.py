@@ -1,11 +1,25 @@
 APP_PARAMS = {
     "title": "Duplicazer",
     "description": "Remove/find duplicate string from raw text!",
-    "left_label": "Original Text",
-    "right_label": "Result",
-    "left_height": 500,
-    "right_height": 500,
-    "remove_button_label": "Remove Duplicates",
-    "find_button_label": "Find Duplicates",
-    "clear_button_label": "Clear",
+    "left": {
+        "label": "Original Text",
+        "height": 500,
+        "key": "input_text",
+    },
+    "right": {
+        "label": "Result",
+        "height": 500,
+        "key": "output_text",
+    },
+    "button": {
+        "remove": {
+            "label": "Remove Duplicates",
+        },
+        "find": {
+            "label": "Find Duplicates",
+        },
+        "clear": {
+            "label": "Clear",
+        },
+    },
 }
