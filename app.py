@@ -6,6 +6,11 @@ from duplicazer.constant import APP_PARAMS
 
 st_logger = get_logger(__name__)
 
+st.set_page_config(
+    layout=APP_PARAMS["layout"],
+    page_title=APP_PARAMS["title"],
+    page_icon=APP_PARAMS["icon"],
+)
 
 def remove():
     remove_ret = remove_duplicate(input_text)
@@ -24,19 +29,19 @@ def clear():
 
 if __name__ == "__main__":
     st.title(APP_PARAMS["title"])
-    st.markdown(APP_PARAMS["description"])
+    st.markdown(f'{APP_PARAMS["markdown"]["repository"]} {APP_PARAMS["markdown"]["visitor"]}')
+    st.markdown(APP_PARAMS["markdown"]["description"])
 
-    # Column initialization
-    left, right = st.columns(2)
-    remove_button, find_button, clear_button = st.columns([0.4, 1.1, 0.17])
+    input_column, output_column = st.columns(2)
+    remove_button, find_button, _,_,clear_button = st.columns([0.15,0.1,0.35,0.4,0.1])
 
-    with left:
+    with input_column:
         input_text = st.text_area(
             label=APP_PARAMS["left"]["label"],
             height=APP_PARAMS["left"]["height"],
             key=APP_PARAMS["left"]["key"],
         )
-    with right:
+    with output_column:
         output_text = st.text_area(
             label=APP_PARAMS["right"]["label"],
             height=APP_PARAMS["right"]["height"],

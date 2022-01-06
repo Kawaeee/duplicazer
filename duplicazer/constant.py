@@ -1,6 +1,12 @@
 APP_PARAMS = {
     "title": "Duplicazer",
-    "description": "Remove/find duplicate string from raw text!",
+    "layout": "centered",
+    "icon": "🤔",
+    "markdown": {
+        "description": "Remove/find duplicate string from raw text!",
+        "repository" : "[![GitHub Star](https://img.shields.io/github/stars/Kawaeee/duplicazer)](https://github.com/Kawaeee/duplicazer)",
+        "visitor" : "![Visitor Badge](https://visitor-badge.glitch.me/badge?page_id=Kawaeee.duplicazer.visitor-badge)"
+    },
     "left": {
         "label": "Original Text",
         "height": 500,
@@ -13,10 +19,10 @@ APP_PARAMS = {
     },
     "button": {
         "remove": {
-            "label": "Remove Duplicates",
+            "label": "Remove",
         },
         "find": {
-            "label": "Find Duplicates",
+            "label": "Find",
         },
         "clear": {
             "label": "Clear",

@@ -33,7 +33,7 @@ def remove_duplicate(input_text: str):
         Text that only have unique lines
     """
     input_text = normalize_linefeed(input_text)
-    input_text_list = input_text.split("\n")
+    input_text_list = [l.strip() for l in input_text.split("\n")]
     return "\n".join(list(dict.fromkeys(input_text_list)))
 
 
@@ -52,7 +52,7 @@ def find_duplicate(input_text: str):
         Text that only have duplicate lines
     """
     input_text = normalize_linefeed(input_text)
-    input_text_list = input_text.split("\n")
+    input_text_list = [l.strip() for l in input_text.split("\n")]
 
     duplicates = []
 
