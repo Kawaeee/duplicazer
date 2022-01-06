@@ -13,5 +13,5 @@
  - Run the streamlit app
  
     ```Bash
-    streamlit run main.py
+    streamlit run app.py
     ```
